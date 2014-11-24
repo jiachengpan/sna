@@ -209,7 +209,7 @@ This increase of language cluster possibly shows that GitHub is actually getting
 Diving into the Y14Q2 language, we can still find out that the largest community or language cluster is still Javascript. However, as is shown in a zoomed version in figure \ref{fig:zoom_js_2014}, there are many red dots inside the Javascript cluster, which are CSS repositories. 
 
 After taking a deeper investigation, two factors may be contributing to this phenomenon: 
-1) these CSS repositories are indeed using CSS as its highest portion of languages used, while Javascript usually just lies next to CSS, therefore the repositories still is highly relying on Javascript; 2) GitHub may have enhanced their language detection routines to seperate CSS from Javascript after Y13Q2, because from the data, it is stange that neither Y13Q2 nor Y12Q2 has CSS repositories included.
+1) these CSS repositories are indeed using CSS as its highest portion of languages used, while Javascript usually just lies next to CSS, therefore the repositories still is highly relying on Javascript; 2) GitHub may have enhanced their language detection routines to seperate CSS from Javascript after Y13Q2, because from the data, it is strange that neither Y13Q2 nor Y12Q2 has CSS repositories included.
 
 \begin{figure}[htp!]
   \subfigure[Y12Q2]{ %
@@ -259,6 +259,14 @@ From the plots of average path length and density, it is hard to conclude any in
 However, when looking into the node and edge count trends, it is obvious to tell a linear or polynomial increase.
 
 Therefore, it shows that for the GitHub repository interest graph, although it increases in size quickly throughout time, the density or average path length is not remarkably increased. That is, repositories are almostly as tightly connected to each other as before, based on the context of users' interest, and therefore users of GitHub are possibly diverse in interest, as well as the repositories.
+
+Also, when focusing on certain repositories' weighted degree, it can also be found that some repositories were popular once but then tend to be unknown, while others may be continuously popular among people, though the starring people of each quarter may not be that many.
+
+For instance, in Y14Q1, there is a repository naming sahat/hackathon-starter. It achieved a 83571 weighted degree at that time, ranking the first amongst 2180 repositories of interest. However, in Y14Q3, it only obtained 5447 weighted degree. Although still relatively high, its great days are no more -- it's ranking 430 out of 2998 repositories.
+
+In contrast, repository twbs/bootstrap achieved 35419 weighted degree in Y14Q1, ranking 44, and still has 32198 weighted degrees in Y14Q3, ranking 67.
+
+Therefore, different repositories have different popularity trend from this observation.
 
 \begin{figure}[htp!]
   \centering
