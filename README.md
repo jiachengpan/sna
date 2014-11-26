@@ -2,7 +2,7 @@
 
 This is the course project of SNA on Coursera, completed on 24th, Nov. 2014.
 
-This work mainly analyzes the GitHub repository interest network, with repositories being the nodes, and the count of users that have starred both of the repositories being the edges.
+This work mainly analyzes the network of GitHub users' interest towards repositories, with repositories being the nodes, and the count of users that have starred both of the repositories being the edges.
 The Analysis focuses not only snapshots of such networks from January 2012 to October 2014, but also looks into the overall trend of the network evolution, as well as certain nodes' change in popularity.
 
 This repository contains all the data, scripts necessary for this report, and the report itself.
@@ -22,5 +22,6 @@ Attaching a snapshot of Y14Q2 network.
 Have fun!
 
 Cheers,
+
 Jiacheng Pan<br>[jiacheng.pan.sh@gmail.com](mailto:jiacheng.pan.sh@gmail.com)
 
