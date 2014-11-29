@@ -19,9 +19,12 @@ To obtain computational data, please use caculate_data.py .
 Attaching a snapshot of Y14Q2 network.
 ![Plot](./report/Y14Q2_lang.png)
 
+The observations that I want to highlight:
+* languages correlate with communities distribution in general (which is also shown in other works, like [this](https://github.com/coyotebush/github-network-analysis))
+* over time, as more and more users coming into GitHub, new communities emerge, e.g. Java, Objective-C
+* some repositories may drive people's (who may have different languages preferences) attention in some period of time, but later fall into less known; while others may be continuously popular, of a milder level
+
 Have fun!
 
-Cheers,
-
-Jiacheng Pan<br>[jiacheng.pan.sh@gmail.com](mailto:jiacheng.pan.sh@gmail.com)
+Cheers,<br>Jiacheng Pan<br>[jiacheng.pan.sh@gmail.com](mailto:jiacheng.pan.sh@gmail.com)
 
