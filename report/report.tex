@@ -1,11 +1,11 @@
 \documentclass[11pt]{article}
 \usepackage{hyperref}
 
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Linux Libertine O}
-\setsansfont{Linux Biolinum O}
-\setmonofont{DejaVu Sans Mono}
+%\usepackage{fontspec}
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{Linux Libertine O}
+%\setsansfont{Linux Biolinum O}
+%\setmonofont{DejaVu Sans Mono}
 
 \usepackage{hyperref}
 \hypersetup{unicode=true, colorlinks, breaklinks, citecolor=blue, linkcolor=black}
@@ -14,6 +14,8 @@
 \usepackage{booktabs} 
 \usepackage{subfigure}
 \usepackage{graphicx}
+
+\setcounter{secnumdepth}{4}
 
 \title{An Emperical Analysis on User Interests on GitHub}
 \author{Jiacheng Pan}
@@ -70,19 +72,15 @@ Also from the both plots, the Objective-C cluster stands out of the main cluster
 And therefore we may further guess that objective-c users may be more distant and isolated from the world of web programming, which involves languages like Ruby, PHP, and Javascript etc., in terms of their interests.
 
 \begin{figure}[htp!]
-  \begin{center}
+  \subfigure[Dataset Y13Q2, coloured with Moduality Class] { 
     \includegraphics[width=0.9\textwidth]{Y13Q2_community.png}
-  \end{center}
-  \caption{Dataset Y13Q2, coloured with Moduality Class}
-  \label{fig:static_community}
-\end{figure}
-
-\begin{figure}[htp!]
-  \begin{center}
+    \label{fig:static_community}
+  }
+  \subfigure[Dataset Y13Q2, coloured with Languages Used by Repositories] { 
     \includegraphics[width=0.9\textwidth]{Y13Q2_lang.png}
-  \end{center}
-  \caption{Dataset Y13Q2, coloured with Languages Used by Repositories}
-  \label{fig:static_lang}
+    \label{fig:static_lang}
+  }
+  \caption{Dataset Y13Q2, Colouring with community and language}
 \end{figure}
 
 \begin{figure}[htp!]
@@ -295,7 +293,8 @@ The conclusion, based on both visual observations and network metrics analysis, 
 \item users tend to be interested in the repositories of the languages they are familiar with;
 \item repositories of same languages or languages of the same function are likely to be clustered together;
 \item over time, more and more users with different language preferences are likely to migrate into GitHub, thus creating more and more language communities, exposing clearer language community characteristics;
-\item over time, the repository interest graph is increasing in size, but its density, i.e. inter-repository relationship, tends to keep tight.
+\item over time, the repository interest graph is increasing in size, but its density, i.e. inter-repository relationship, tends to keep tight;
+\item over time, some repositories got really high popularity but later falls into less known, while some continuously have mild starring number.
 \end{enumerate}
 
 However, since the data sampled are only limited to repositories with high star number, the conclustions made in this work may not be accurate, for even more repositories, which may be popular among smaller groups, are not included into the examination. Further work need to be done if a deeper investigation is to be made.
